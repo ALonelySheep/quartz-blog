@@ -1,19 +1,13 @@
-# Quartz
+# Cyan's Blog
 
-Host your second brain and [digital garden](https://jzhao.xyz/posts/networked-thought) for free. Quartz features
+Welcome!🎉 I'm Cyan Fu, a CS undergrad at Tongji University. 
 
-1. Extremely fast natural-language search
-2. Customizable and hackable design based on Hugo
-3. Automatically generated backlinks, link previews, and local graph
-4. Built-in CJK + Latex Support and Admonition-style callouts
-5. Support for both Markdown Links and Wikilinks
+I write about anything and everything here, and my main interest lies in the intersection of AI and 3D vision. I hope you find something new here!
 
-Check out some of the [amazing gardens that community members](https://quartz.jzhao.xyz/notes/showcase/) have published with Quartz!
+🔗Starts your journey [**Here**](https://alonelysheep.github.io/quartz-blog/)
 
 > “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
-🔗 Get Started: https://quartz.jzhao.xyz/
+![Demo](Demo.gif)
 
-![Quartz Example Screenshot](./screenshot.png)*Quartz Example Screenshot*
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+This blog is built with [Quartz](https://github.com/jackyzha0/quartz), an amazing static site generator for hosting digital garden.
