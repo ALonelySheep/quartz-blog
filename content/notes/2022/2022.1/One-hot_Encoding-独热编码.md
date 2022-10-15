@@ -15,9 +15,9 @@ Tags: #One-hot #DeepLearning #Encoding
 
 
 $$\begin{array}{ll}
-    apple &=\quad [\ 1\quad 0\quad 0\ ] \\
-    banana &=\quad [\ 0\quad 1\quad 0\ ] \\
-    pineapple &=\quad [\ 0\quad 0\quad 1\ ]
+    apple &=\quad [\space 1\quad 0\quad 0\space ] \\
+    banana &=\quad [\space 0\quad 1\quad 0\space ] \\
+    pineapple &=\quad [\space 0\quad 0\quad 1\space ]
 \end{array}$$
 
 > [Dive into Deep Learning](https://zh-v2.d2l.ai/chapter_linear-networks/softmax-regression.html#subsec-classification-problem): 

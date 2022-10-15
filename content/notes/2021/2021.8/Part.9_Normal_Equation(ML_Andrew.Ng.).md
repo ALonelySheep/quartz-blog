@@ -42,7 +42,7 @@ y^{(m)}
 $$
 
 ## Intuitive
-- 这实际上是在求$X$矩阵列空间:$\mathrm{Col}(X)$中, 最接近向量$\vec{y}$的向量$X\vec\theta$(投影$\mathrm{proj}_{\mathrm{Col(}X\mathrm )}(\ \vec y\ )$[^3]), 这里$\theta$可以看作是这个投影在列空间里面的坐标.
+- 这实际上是在求$X$矩阵列空间:$\mathrm{Col}(X)$中, 最接近向量$\vec{y}$的向量$X\vec\theta$(投影$\mathrm{proj}_{\mathrm{Col(}X\mathrm )}(\space \vec y\space )$[^3]), 这里$\theta$可以看作是这个投影在列空间里面的坐标.
 - 这里的列向量就是所有样本里面的每一个单独的Feature构成的向量.
 - 这样看来, 问题的求解就是要在特征构成的"特征空间"里面找到一个点, 这个点最接近真实值$\vec y$ (这其实是[Linear Regression](notes/2021/2021.8/Part.3_Linear_Regression(ML_Andrew.Ng.).md)的Intuition, Normal Equation方法促使我用线性代数的角度来看待这个问题)
 ![](notes/2021/2021.7/assets/img_2022-10-15-18.png)[^2]
@@ -58,7 +58,7 @@ $$
 > 详细推导见上方提及的书Linear Algebra and Its Applications by David C. Lay 第6章
 
 大概思路:
-$X$ 的列向量垂直于$(\vec y -\mathrm {proj}_{Col(X)}\ \vec y)=(\vec y-X\theta)$, 所以$X$的列与$(\vec y-X\theta)$的内积为0, 也就相当于$X^T$与$(\vec y-X\theta)$的矩阵积为0 $\Rightarrow X^T(\vec y-X\theta)=0 \Rightarrow X^T\vec y=X^TX\theta$
+$X$ 的列向量垂直于$(\vec y -\mathrm {proj}_{Col(X)}\space \vec y)=(\vec y-X\theta)$, 所以$X$的列与$(\vec y-X\theta)$的内积为0, 也就相当于$X^T$与$(\vec y-X\theta)$的矩阵积为0 $\Rightarrow X^T(\vec y-X\theta)=0 \Rightarrow X^T\vec y=X^TX\theta$
 
 然后如果$X$的列向量独立, 那么$X^TX$可逆, 那么$\theta=(X^TX)^{-1}X^T\vec y$
 

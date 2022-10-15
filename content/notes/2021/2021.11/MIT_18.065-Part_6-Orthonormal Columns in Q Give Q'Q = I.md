@@ -20,7 +20,7 @@ Tags: #Math/LinearAlgebra
 需要注意的是, 如果是复数相连的内积, 我们需要使用共轭复数(Conjugate)组成的向量来计算内积: $\overline{\boldsymbol{x}}^{\mathrm{T}} \boldsymbol{y}=\bar{x}_{1} y_{1}+\cdots+\bar{x}_{n} y_{n}=0$
 
 ### 与勾股定理的联系
-$$\begin{aligned}||x-y||^2&=(x-y)^T(x-y)\\&=x^Tx+y^Ty-x^Ty-y^Tx\\&=||x||^2+||y||^2-2||x||\ ||y||cos\theta\end{aligned}$$
+$$\begin{aligned}||x-y||^2&=(x-y)^T(x-y)\\&=x^Tx+y^Ty-x^Ty-y^Tx\\&=||x||^2+||y||^2-2||x||\space ||y||cos\theta\end{aligned}$$
 
 - x y正交的时候 $cos\theta=0$, 
 
@@ -44,7 +44,7 @@ $$\begin{aligned}||x-y||^2&=(x-y)^T(x-y)\\&=x^Tx+y^Ty-x^Ty-y^Tx\\&=||x||^2+||y||
 - "Orthogonal matrices" are square with orthonormal columns: $Q^{\mathrm{T}}=Q^{-1}$
 	- 所以"Orthogonal matrices"其实叫"Orthonormal matrices"更合适
 
-$$Orthogonal\ matrix: Q^{\mathrm{T}} Q=QQ^{\mathrm{T}}=I_{n\times n}$$
+$$Orthogonal\space matrix: Q^{\mathrm{T}} Q=QQ^{\mathrm{T}}=I_{n\times n}$$
 
 ## 重要矩阵列举
 
@@ -143,7 +143,7 @@ $[1,-i,i^2,-i^3]\left[\begin{array}{ccrr}1 \\i^3 \\i^6 \\ i^9\end{array}\right]=
 ## 每一个向量空间$R^n$都有一组正交基
 - 这可以由Gram-Schmidt方法得到
 
-- 奇异值分解可以找到矩阵$A$的$Row\ Space$的一组正交基: $u_1\cdots u_r$, 矩阵$A$的$Column\ Space$的一组正交基: $v_1\cdots v_r$, 其中r是A的秩. 
+- 奇异值分解可以找到矩阵$A$的$Row\space Space$的一组正交基: $u_1\cdots u_r$, 矩阵$A$的$Column\space Space$的一组正交基: $v_1\cdots v_r$, 其中r是A的秩. 
 	- 这个两个正交基特殊的地方在于它们由矩阵A联系起来:
 	
 $$\text { Singular vectors } \quad A \boldsymbol{v}_{1}=\sigma_{1} \boldsymbol{u}_{1} \quad A \boldsymbol{v}_{2}=\sigma_{2} \boldsymbol{u}_{2} \quad \cdots \quad A \boldsymbol{v}_{r}=\sigma_{r} \boldsymbol{u}_{r}$$
@@ -157,7 +157,7 @@ $$\text { Singular vectors } \quad A \boldsymbol{v}_{1}=\sigma_{1} \boldsymbol{u
 ![](notes/2021/2021.11/assets/img_2022-10-15-29.png)
 
 $$Px=QQ^{\mathrm{T}}x=Q(Q^{\mathrm{T}}x)=$$
-$$Col(Q)(Inner\ product\ of\ Row(Q)\ and\ x)$$
+$$Col(Q)(Inner\space product\space of\space Row(Q)\space and\space x)$$
 就是先计算x与Q里面各个正交基底的内积, 得到在这个正交基底下的"坐标", 然后再用Col(Q)表示出来.
 
 

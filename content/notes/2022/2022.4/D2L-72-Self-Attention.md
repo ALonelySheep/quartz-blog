@@ -15,7 +15,7 @@ Tags: #Self-Attention #Attention #DeepLearning
 
 - Attention 机制可以抽象为:[^1]
 $$\begin{align}
-\textit{Attention}(Q,K,V) = V\cdot\textit{softmax}\ (\textit{score}(Q, K))
+\textit{Attention}(Q,K,V) = V\cdot\textit{softmax}\space (\textit{score}(Q, K))
 \end{align}$$
 自注意力就是 $Q = K = V$ , 也就是同一个序列同时作为 Query, Key 和 Value.
 

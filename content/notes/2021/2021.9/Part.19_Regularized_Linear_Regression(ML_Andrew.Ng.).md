@@ -25,7 +25,7 @@ Tags: #MachineLearning #Regularization #GradientDescent #LinearRegression #Norma
 
 $$
 \begin{aligned}
-Re&peat\ \{\\
+Re&peat\space \{\\
 &\theta_{0}:=\theta_{0}-\alpha \frac{1}{m} \sum_{i=1}^{m}\left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right) x_{0}^{(i)} \\
 &\theta_{j}:=\theta_{j}-\alpha\left[ \frac{1}{m} \sum_{i=1}^{m}
 \left(h_{\theta}\left(x^{(i)}\right)-y^{(i)}\right) x_{j}^{(i)}+\frac{\lambda}{m} \theta_{j}\right]

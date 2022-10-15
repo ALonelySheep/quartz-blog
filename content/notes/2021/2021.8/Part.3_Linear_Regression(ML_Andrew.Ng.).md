@@ -26,7 +26,7 @@ $$ h_\theta(x)=\theta_1 x+\theta_0$$
 
 - **A pair** $(x^{(i)} , y^{(i)} )$ is called a **training example**
 
-- The dataset that we’ll be using to learn—**a list of m training examples** $(x^{(i)},y^{(i)})\ , (i=1,...,m)$ — is called a **training set**.
+- The dataset that we’ll be using to learn—**a list of m training examples** $(x^{(i)},y^{(i)})\space , (i=1,...,m)$ — is called a **training set**.
 
 
 ## Cost Function

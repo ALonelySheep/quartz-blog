@@ -69,9 +69,9 @@ Tags: #CNN #DeepLearning #Convolution
 
 ## 进一步拓展: Channels - 通道
 - 上面我们只是单纯地将图像看作像素点的二维矩阵, 但是实际上彩色图像有RGB三个通道 (Channel). 也就是说: 图像不是二维张量，而是一个由高度、宽度和颜色组成的三维张量.
-- 因此，我们将 $X$ 索引为 $x_{i, j, k}$ . 对于图像的不同通道, 我们单独设置一个权重矩阵 $v_{a,\ b,\ i}$, 由此卷积相应地调整为 $v_{a,\ b,\ c}$ , 最后我们将不同输入通道的卷积结果相加:
-	$$h_{i, j}=\sum_{a=-\Delta}^{\Delta} \sum_{b=-\Delta}^{\Delta}\sum_c v_{a,\ b,\ c}\ x_{i+a,\ j+b,\ c}$$
-	- 现在我们将一个三维的图像 $X_{ijk}$ 变换为了一个二维的图像 $H_{ij}$, 权重变成了一个三维的张量 $v_{a,\ b,\ c}$
+- 因此，我们将 $X$ 索引为 $x_{i, j, k}$ . 对于图像的不同通道, 我们单独设置一个权重矩阵 $v_{a,\space b,\space i}$, 由此卷积相应地调整为 $v_{a,\space b,\space c}$ , 最后我们将不同输入通道的卷积结果相加:
+	$$h_{i, j}=\sum_{a=-\Delta}^{\Delta} \sum_{b=-\Delta}^{\Delta}\sum_c v_{a,\space b,\space c}\space x_{i+a,\space j+b,\space c}$$
+	- 现在我们将一个三维的图像 $X_{ijk}$ 变换为了一个二维的图像 $H_{ij}$, 权重变成了一个三维的张量 $v_{a,\space b,\space c}$
 		![](notes/2022/2022.2/assets/conv-multi-in.svg)
 
 - 类比图像的颜色通道, 我们的隐藏表示 $H$ 能否也采用三维张量呢?  
@@ -79,8 +79,8 @@ Tags: #CNN #DeepLearning #Convolution
 	- 直观上你可以想象在靠近输入的底层，一些通道专门识别边缘，而一些通道专门识别纹理。换句话说，对于每一个空间位置，我们采用一组而不是一个隐藏表示。
 	 ![300](notes/2022/2022.2/assets/Pasted%20image%2020220227122429.png)[^3]
 
-- 为了支持输入 $X$ 和隐藏表示 $H$ 中的多个通道，我们可以在权重 $V$ 中添加第四个坐标，即 $v_{a,\ b,\ c,\ d}$  , 综上所述:
-	$$h_{i,\ j,\ d}=\sum_{a=-\Delta}^{\Delta} \sum_{b=-\Delta}^{\Delta}\sum_c v_{a,\ b,\ c,\ d}\ x_{i+a,\ j+b,\ c}$$
+- 为了支持输入 $X$ 和隐藏表示 $H$ 中的多个通道，我们可以在权重 $V$ 中添加第四个坐标，即 $v_{a,\space b,\space c,\space d}$  , 综上所述:
+	$$h_{i,\space j,\space d}=\sum_{a=-\Delta}^{\Delta} \sum_{b=-\Delta}^{\Delta}\sum_c v_{a,\space b,\space c,\space d}\space x_{i+a,\space j+b,\space c}$$
 	- 多个隐藏层通道意味着每一层有许多"块"不同的卷积核.
 		![卷积层权重大小的计算](notes/2022/2022.2/assets/卷积层权重大小的计算.svg)
 ---

@@ -9,9 +9,9 @@ date: ""
 
 - 在 LR (0) 里面, Reduce 完全占据了一个状态, 这造成了极大的浪费:
 	- 回忆 LL 分析里面的 FOLLOW 集合: FOLLOW (A) = {可以立即跟在 A 后面的所有终结符}
-	- 一个状态需要 Reduce 代表着出现了一个完全识别句柄的项: $P\rightarrow\alpha\ \cdot$, 但是仔细想想: 我们完全可以再向后多看一个符号, 只有在下一个符号属于 FOLLOW (P) 的时候, 我们才应该规约, 
+	- 一个状态需要 Reduce 代表着出现了一个完全识别句柄的项: $P\rightarrow\alpha\space \cdot$, 但是仔细想想: 我们完全可以再向后多看一个符号, 只有在下一个符号属于 FOLLOW (P) 的时候, 我们才应该规约, 
 		![p后面要有Follow(p)](notes/2021/2021.10/assets/img_2022-10-15-58.png)
-		- 如上图所示, 要是 b 不在 FOLLOW (P) 里面的话, α就不应该是 $P\rightarrow\alpha$ 的句柄了, 应该继续 shift, 读进 b, 寻找句柄 $Q\rightarrow\alpha\ b\cdots$
+		- 如上图所示, 要是 b 不在 FOLLOW (P) 里面的话, α就不应该是 $P\rightarrow\alpha$ 的句柄了, 应该继续 shift, 读进 b, 寻找句柄 $Q\rightarrow\alpha\space b\cdots$
 
 SLR (1) 分析法就是利用 Look ahead, 看看下一个符号和规约产生式的非终结符是不是一致的, 只有在一致的时候才进行规约, 消除了部分的冲突.
 
@@ -20,7 +20,7 @@ SLR (k) 分析在 DFA 的构造上和 LR (0) 分析法完全一致.
 
 ### 分析表的构造
 SLR (1) 在构造分析表的时候与 LR (0) 的唯一不同就是 Reduce 的填入方式:
-- LR (0) 观察每一个 set 里面的项, 只要出现完全识别句柄的项 $P\rightarrow\alpha\ \cdot$ , 就将这个状态全部标成 Reduce $P\rightarrow\alpha$
+- LR (0) 观察每一个 set 里面的项, 只要出现完全识别句柄的项 $P\rightarrow\alpha\space \cdot$ , 就将这个状态全部标成 Reduce $P\rightarrow\alpha$
 - SLR (1) 还要观察 Follow (P), 只在属于 Follow (P) 的终结符下面填入 Reduce
 
 对比:

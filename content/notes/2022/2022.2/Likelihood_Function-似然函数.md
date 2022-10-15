@@ -15,7 +15,7 @@ Tags: #Math/Statistics #MachineLearning
 对于某个(某组)随机变量 $X$, 我们通过采样获得了数据集 $x$ :
 - 似然函数$\mathcal{L}(\theta \mid x)$就是在某个参数(parameter) $\theta$ 下, 现有数据 $x$ 出现的概率大小, 也就是说: 
 $$\mathcal{L}(\theta \mid x) = P(X=x\mid\theta)$$
-$P(X=x\mid\theta)$ 也常常写作 $p_{\theta}(x)=P_{\theta}(X=x)=P(X=x\ ;\theta)$
+$P(X=x\mid\theta)$ 也常常写作 $p_{\theta}(x)=P_{\theta}(X=x)=P(X=x\space ;\theta)$
 
 - 因为数据集有许多样本点, 所以似然函数是一个联合概率分布(Joint Probability)
 

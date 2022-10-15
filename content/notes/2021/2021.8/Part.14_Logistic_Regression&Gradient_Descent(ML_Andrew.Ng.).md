@@ -31,8 +31,8 @@ $$\begin{aligned}
 
 $$\begin{aligned}
 \frac{\partial}{\partial \theta_{j}} C(\theta) 
-&=\frac{\partial}{\partial \theta_{j}}\left(\ y \log \left(h_{\theta}\left(x\right)\right)
-+\left(1-y\right) \log \left(1-h_{\theta}\left(x\right)\right)\ \right)\\
+&=\frac{\partial}{\partial \theta_{j}}\left(\space y \log \left(h_{\theta}\left(x\right)\right)
++\left(1-y\right) \log \left(1-h_{\theta}\left(x\right)\right)\space \right)\\
 
 &=\left(y \frac{1}{g\left(\theta^Tx\right)}-(1-y) \frac{1}{1-g\left(\theta^Tx\right)}\right) \frac{\partial}{\partial \theta_{j}} g\left(\theta^Tx\right) \\
 &=\left(y \frac{1}{g\left(\theta^Tx\right)}-(1-y) \frac{1}{1-g\left(\theta^Tx\right)}\right) g\left(\theta^Tx\right)\left(1-g\left(\theta^Tx\right)\right) \frac{\partial}{\partial \theta_{j}} \theta^Tx\\

@@ -24,7 +24,7 @@ $$
 \begin{aligned}
 Loop &\quad \{\qquad\\
 &\text { for } \mathrm{i}=1 \text { to } \mathrm{m},\{ \\
-&\qquad \theta_{j}:=\theta_{j}+\alpha\left(y^{(i)}-h_{\theta}\left(x^{(i)}\right)\right) x_{j}^{(i)} \qquad\quad(\text { for every j} \ )\\
+&\qquad \theta_{j}:=\theta_{j}+\alpha\left(y^{(i)}-h_{\theta}\left(x^{(i)}\right)\right) x_{j}^{(i)} \qquad\quad(\text { for every j} \space )\\
 \quad&\qquad\quad\}\\
 &\quad\}
 \end{aligned}

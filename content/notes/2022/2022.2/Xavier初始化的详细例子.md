@@ -22,7 +22,7 @@ $$\begin{aligned}
 (\text{because i.i.d, covariance is 0} )
 &=\mathbb{E}\left[\sum_{j}\left(w_{i, j}^{s}\right)^{2}\left(h_{j}^{s-1}\right)^{2}\right] \\
 &=\sum_{j} \mathbb{E}\left[\left(w_{i, j}^{s}\right)^{2}\right] \mathbb{E}\left[\left(h_{j}^{s-1}\right)^{2}\right] \\
-(\text{because }\mathbb{E}\left[h_{j}^{s-1}\right]^{2}, \mathbb{E}\left[w_{i,j}^{s}\right]^{2}\ is\ 0)
+(\text{because }\mathbb{E}\left[h_{j}^{s-1}\right]^{2}, \mathbb{E}\left[w_{i,j}^{s}\right]^{2}\space is\space 0)
 &=\sum_{j} \operatorname{Var}\left[w_{i, j}^{s}\right] \operatorname{Var}\left[h_{j}^{s-1}\right]\\
 \left(\mathbf{W}^{s} \in \mathbb{R}^{n_{s} \times n_{s-1}}\right)
 &=n_{s-1} \gamma_{s} \operatorname{Var}\left[h_{j}^{s-1}\right]

@@ -23,8 +23,8 @@ date: ""
 
 ### 构建转化规则: DFA
 这涉及到两个操作
-- $\mathrm{Closure(一个项目集合)}\ \Rightarrow$ 求闭包, 即求出一个封闭的 LR 项目集合, 十分类似于将 NFA 转化为 DFA 里面的 $\varepsilon-$ 闭包 
-- $\mathrm{Goto(一个项目集合, 某个符号)}\ \Rightarrow$ 看看当前状态输入 (吃掉) 某个符号后, 会转移到哪个状态
+- $\mathrm{Closure(一个项目集合)}\space \Rightarrow$ 求闭包, 即求出一个封闭的 LR 项目集合, 十分类似于将 NFA 转化为 DFA 里面的 $\varepsilon-$ 闭包 
+- $\mathrm{Goto(一个项目集合, 某个符号)}\space \Rightarrow$ 看看当前状态输入 (吃掉) 某个符号后, 会转移到哪个状态
 
 > 这里可以联系形式语言与自动机的知识: 构成 DFA 有两种不同的思路: 我们可以先根据产生式构造一个 LR 项的 NFA, 然后再转化为 DFA[^3]; 或者我们也可以直接构造 DFA. 
 > 不过 LR 分析的时候我们通常都采用后一种方法: 即从初始状态出发, 不断地根据所有可能的输入求闭包, 生成新的状态集, 直到状态数不变. 
@@ -77,7 +77,7 @@ $$\begin{aligned}
 - 对于 DFA 里面的每一条边:
 	- 如果这个转移是终结符, 那么在 ACTION 表里面填上 **"Shift <目标状态>"**
 	- 如果这个转移是非终结符, 那么在 GOTO 表里面填上 **"Goto <目标状态>"**
-- 对于包含形如 $A \rightarrow \gamma\  \textbf.$ 的状态 (即这个状态包含一个 LR 项, 这个 LR 项成功识别了一个句柄), 在 ACTION 表对应位置写上 **"Reduce <产生式序号>"**
+- 对于包含形如 $A \rightarrow \gamma\space  \textbf.$ 的状态 (即这个状态包含一个 LR 项, 这个 LR 项成功识别了一个句柄), 在 ACTION 表对应位置写上 **"Reduce <产生式序号>"**
 - 对于包含 S′ → S.$ 项的状态, 我们在 ACTION 表填入 **"Accept"**, 表示分析成功. (成功识别了第一个产生式, 即产生初始符号的产生式: S′ → S.$ )
 
 ![500](notes/2021/2021.10/assets/Pasted%20image%2020211106171144.png)
@@ -107,14 +107,14 @@ $$\begin{aligned}
 要是有一个地方又有 Reduce 又有 Shift, 就是一个移进归约冲突.
 
 #### 归约-归约冲突
-同理, 要是有个状态里面有两个不同的完全识别的句柄: $P\rightarrow\alpha\ \cdot$ 与 $Q\rightarrow\beta\ \cdot$ 那么就出现了归约-归约冲突.
+同理, 要是有个状态里面有两个不同的完全识别的句柄: $P\rightarrow\alpha\space \cdot$ 与 $Q\rightarrow\beta\space \cdot$ 那么就出现了归约-归约冲突.
 
 
 - 注意只可能出现 Shift-Reduce Conflict, 不可能出现 Goto-Reduce Conflict.
 	- 这是因为: 
 		1. 假设现在是状态 a, 如果下一个读入的是非终结符 N, 那么之前一定有一个归约 $N\rightarrow \alpha$ 使得 DFA 回退到了状态 a. 
 		2. 假设现在状态 a 有一个 Goto-Reduce Conflict, 那么意味着现在栈顶一定又有一个完全识别的句柄 $\beta$, 构成一个归约 $P\rightarrow\beta$. 
-		3. 这意味着在归约 $N\rightarrow \alpha$ 之前, 栈里面的状态是:  $\ \cdots\beta \alpha栈顶$.
+		3. 这意味着在归约 $N\rightarrow \alpha$ 之前, 栈里面的状态是:  $\space \cdots\beta \alpha栈顶$.
 		4. 但是这是不可能的, 我们构造 DFA 的方式决定了 $\beta$ 一定一出现就会被归约掉, 不可能被完整的放到栈里面去.
 
 

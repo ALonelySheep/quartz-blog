@@ -74,7 +74,7 @@ L(\theta) &=\prod_{i=1}^{m} p\left(y^{(i)} \mid x^{(i)} ; \theta\right) \\
 
 根据**极大似然估计**的思想, 我们想要知道$L(\theta)$取得最大值的时候的$\theta$值, 因为最大化这个函数十分复杂, 我们可以取对数(因为对数函数是严格递增的, 而这个的值域也在对数函数的定义域里面)
 
-我们用$\ell(\theta)$表示$log\ likelihood$:
+我们用$\ell(\theta)$表示$log\space likelihood$:
 $$\begin{aligned}
 \ell(\theta) &=\log L(\theta) \\
 &=\log \prod_{i=1}^{m} \frac{1}{\sqrt{2 \pi} \sigma} \exp \left(-\frac{\left(y^{(i)}-\theta^{T} x^{(i)}\right)^{2}}{2 \sigma^{2}}\right) \\

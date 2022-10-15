@@ -112,7 +112,7 @@ $$
 & \operatorname{Pr}\left(\exists u, v \text { s.t. the following event fails: }(1-\epsilon)\|u-v\| \leq\|L(u-v)\| \leq(1+\epsilon)\|u-v\|\right) \\
 \leq & \sum_{\forall
 u, v} \operatorname{Pr}\left(\text { s.t. the following event fails: }(1-\epsilon)\|u-v\| \leq\|L(u-v)\| \leq(1+\epsilon)\|u-v\|\right) \\
-\leq & \ m^2\times\frac 2 {m^3} \\
+\leq & \space m^2\times\frac 2 {m^3} \\
 =& \frac 2 {m}
 \end{aligned}
 $$

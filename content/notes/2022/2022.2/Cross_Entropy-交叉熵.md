@@ -43,7 +43,7 @@ $$H(p, q)=-\sum_{x \in \mathcal{X}} p(x) \log q(x)$$
 
 
 - 交叉熵是非负的: $$H(p, q)=-\sum_{x } p(x) \log q(x)$$
-	其中 $p(x), q(x)\in[\ 0,1\ ], \log q(x)\leq0$
+	其中 $p(x), q(x)\in[\space 0,1\space ], \log q(x)\leq0$
 	
 ## 交叉熵: 作为损失函数
 [交叉熵是怎样衡量输出和真实值的差别的呢?](notes/2022/2022.2/D2L-14-Cross%20Entropy%20as%20Loss.md)

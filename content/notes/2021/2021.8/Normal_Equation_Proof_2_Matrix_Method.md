@@ -25,7 +25,7 @@ date: ""
 	- 或者可以从导数的角度来证明:
 	标量函数$f=\operatorname{tr}AB$
 	$$\begin{align}  
-	df &= d\ \operatorname{tr}AB  \\
+	df &= d\space \operatorname{tr}AB  \\
 	   &= \operatorname{tr}d(AB) \\
 	   &= \operatorname{tr}BdA \\
 	   \end{align}$$
@@ -52,7 +52,7 @@ $$\begin{align}
 	证明: 
 	标量函数$f=\operatorname{tr} A B A^{T} C$
 	$$\begin{align}  
-	df &= d\ \operatorname{tr} (A B A^{T} C)  \\
+	df &= d\space \operatorname{tr} (A B A^{T} C)  \\
 	   &= \operatorname{tr}(d(A B A^{T} C)) \\
 	   &= \operatorname{tr}(dA (B A^{T} C)+A dB (A^{T} C)+(A B) dA^{T} (C)+(A B A^{T}) dC) \\
 	   &= \operatorname{tr}(dA (B A^{T} C)+(A B) dA^{T} (C)) \\

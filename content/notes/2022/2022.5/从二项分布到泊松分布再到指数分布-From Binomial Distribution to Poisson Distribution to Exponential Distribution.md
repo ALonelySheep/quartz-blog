@@ -58,7 +58,7 @@ k
 	$$\lim _{n \rightarrow \infty}\left(\begin{array}{l}
 	n \\
 	k
-	\end{array}\right)\left(\frac{\lambda}{n}\right)^{k}\left(1-\frac{\lambda}{n}\right)^{n-k}=\frac{\lambda^{k}\ e^{-\lambda}}{k !} $$
+	\end{array}\right)\left(\frac{\lambda}{n}\right)^{k}\left(1-\frac{\lambda}{n}\right)^{n-k}=\frac{\lambda^{k}\space e^{-\lambda}}{k !} $$
 也就是 Poisson Distribution 的概率密度函数
 
 - 在 $n$ 很大, 也就是 $p$ 很小的时候, 两者大概相似:

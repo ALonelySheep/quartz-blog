@@ -20,7 +20,7 @@ Tags: #DeepLearning #ActivationFunction
 - ReLU就是一个 $max(0,x)$ 函数.
 - ReLU是分段线性的
 - ReLU的变体通过设置一个线性项, 使得负轴的一些信息得到保留(Parameterized ReLU)
-	$\mathbf{pReLU}(x)=max(0,x)+α\ min(0,x).$
+	$\mathbf{pReLU}(x)=max(0,x)+α\space min(0,x).$
 	![](notes/2022/2022.2/assets/Pasted%20image%2020220212160706.png)
 
 ### 导数
