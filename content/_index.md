@@ -48,7 +48,7 @@ I write about anything and everything here, and my main interest lies in the int
 - [权重衰减](notes/2022/2022.2/D2L-22-权重衰减.md)
 - [数值稳定性](notes/2022/2022.2/D2L-24-数值稳定性.md)
 	- [D2L-25-让训练更加稳定-Xavier初始化](notes/2022/2022.2/D2L-25-让训练更加稳定-Xavier初始化.md)
-- [[经典模型]]
+- [经典模型](notes/2022/2022.10/经典模型.md)
 ### English
 [有效地背诵GRE单词](notes/2022/2022.7/有效地背诵GRE单词.md)
 
