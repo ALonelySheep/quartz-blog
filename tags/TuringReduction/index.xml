@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>TuringReduction on</title><link>https://alonelysheep.github.io/quartz-blog/tags/TuringReduction/</link><description>Recent content in TuringReduction on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://alonelysheep.github.io/quartz-blog/tags/TuringReduction/index.xml" rel="self" type="application/rss+xml"/><item><title>图灵归约 Turing Reduction</title><link>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/%E5%9B%BE%E7%81%B5%E5%BD%92%E7%BA%A6-Turing-Reduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/%E5%9B%BE%E7%81%B5%E5%BD%92%E7%BA%A6-Turing-Reduction/</guid><description>把还没解决的问题归约到已经解决的问题上
+用已经解决的问题去解决还没解决的问题
+密码学原理与实践 Page 167
+假设我们已经存在一个解决问题 A 的算法 $G(x)$
+一个A到B的图灵归约即利用$G(x)$构造一个解决问题B的算法$H(x)$, 并且$H(x)$是多项式时间的.
+https://zhuanlan.zhihu.com/p/194313998 这篇文章译自 reductions-and-jokes</description></item></channel></rss>

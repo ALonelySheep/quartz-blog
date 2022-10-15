@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hash on</title><link>https://alonelysheep.github.io/quartz-blog/tags/Hash/</link><description>Recent content in Hash on</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://alonelysheep.github.io/quartz-blog/tags/Hash/index.xml" rel="self" type="application/rss+xml"/><item><title>Hash函数_Pt.1_数据完整性</title><link>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.1_%E6%95%B0%E6%8D%AE%E5%AE%8C%E6%95%B4%E6%80%A7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.1_%E6%95%B0%E6%8D%AE%E5%AE%8C%E6%95%B4%E6%80%A7/</guid><description>4.1 Hash 函数与数据完整性 Hash 函数的主要目的就是为了保持数据的完整性 与&amp;quot;加密&amp;quot;不同, hash函数的目的不是为了让一个消息对其他人&amp;quot;不可知,不可理解&amp;quot;, 而是为了保证这条信息没有被篡改, 为了&amp;quot;不变质&amp;quot;地保存一条信息, 即保持这条信息原来的模样
+Hash函数有两种, 一种是带密钥的, 一种是不带密钥的, 两种在应用场景上有一些区别
+不带密钥的Hash函数可以在一段时间内验证数据的完整性。 想象一个Oracle(先知, 谕示器), 你提供给他一条信息, 她总会返回给你一个独特的信息，通过比对这个信息，你就能够知道自己的信息从上次询问到现在之间是否被篡改了（但是这个信息本身并没有什么实际含义）
+注意, 你必须要安全的保存 $y=h(x)$, 否则坏蛋可以同时更换你的 $x$ -&amp;gt; $x^\prime$ 和 $y$ -&amp;gt; $y^\prime=h(x^\prime)$, 你在询问的时候依然有 $h(x^\prime)=y^\prime$, 满足校验条件.</description></item><item><title>Hash函数_Pt.2_攻击方法_安全性</title><link>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.2_%E6%94%BB%E5%87%BB%E6%96%B9%E6%B3%95_%E5%AE%89%E5%85%A8%E6%80%A7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.2_%E6%94%BB%E5%87%BB%E6%96%B9%E6%B3%95_%E5%AE%89%E5%85%A8%E6%80%A7/</guid><description>Hash函数的攻击方法/安全性 密码学原理与实践 page99
+理想的安全性:随机谕示模型(Random Oracle Model) 完全的随机对应性:
+从名称来理解, 即理想的Hash函数相当于一个&amp;quot;先知&amp;quot;, 能够对每一个$x$给出一个完全随机的$hash(x)$, 并且计算$hash(x)$的唯一方法便是询问Oracle(谕示器)
+在这个假设下,有如下定理:
+密码学原理与实践 page94
+直观理解:</description></item><item><title>Hash函数_Pt.3_迭代Hash函数</title><link>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.3_%E8%BF%AD%E4%BB%A3Hash%E5%87%BD%E6%95%B0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.3_%E8%BF%AD%E4%BB%A3Hash%E5%87%BD%E6%95%B0/</guid><description>迭代Hash函数 迭代Hash函数的基本结构 迭代Hash函数是一种用有限长度Hash函数来处理无限长度的数据的方法
+下面这张图形象地表示了迭代Hash函数地加密步骤: 这样的构造方法可以概括为以下的三个步骤:
+我们以有限的Hash函数$compress$为基础 $$ {0,1}^{m+t}\longrightarrow {0,1}^{m} $$ 这是一个将长度从$m+t$缩减到$m$的有限长度hash函数
+预处理 这一步将明文切分成长度为t的小段. &amp;ndash;&amp;gt;最后剩余的怎么办?
+在末尾添加整个字符串的长度
+如果还不够,用0补足 &amp;ndash;&amp;gt;为什么要添加字符串的长度?</description></item><item><title>Hash函数_Pt.4_安全Hash算法_SHA-1</title><link>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.4_%E5%AE%89%E5%85%A8Hash%E7%AE%97%E6%B3%95_SHA-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.4_%E5%AE%89%E5%85%A8Hash%E7%AE%97%E6%B3%95_SHA-1/</guid><description>SHA-1 Tags: #Cryptography #Math #Course #Hash
+SHA-1是一个具有160bit消息摘要的迭代Hash函数
+主要思想 SHA-1 的分组大小是 512bit, 意味着每一次迭代处理 512bit 的数据
+SHA-1建立在对比特串面向字的操作上, 意味着在处理512bit的时候是每次32bit, 一共16次, 一共80次. (为什么变多了? 因为在循环里面需要将16个字扩充到80个字, 如下图)</description></item><item><title>Hash函数_Pt.5_消息认证码_MAC</title><link>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.5_%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81%E7%A0%81_MAC/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alonelysheep.github.io/quartz-blog/notes/2021/2021.6/Hash%E5%87%BD%E6%95%B0_Pt.5_%E6%B6%88%E6%81%AF%E8%AE%A4%E8%AF%81%E7%A0%81_MAC/</guid><description>消息认证码 MAC Message Authentication Code 消息认证码是什么 生成方式: 带密钥的Hash函数, Hash值可以不用在安全的信道上传输, 只需要开始的时候协商一个密钥$K$就可以了
+用于核验在不安全信道上传输的消息有没有被修改
+不安全的构造方式 一个很直观的方式便是把密钥$K$加到明文x里面,一起Hash, 既然攻击者不知道$K$是什么, 他也应该无法计算$h_K(x)=h(x_K). (x_K$为加入了K的x)
+但是以下论证告诉我们一些简单的构造方式并不安全, 攻击者即使不知道K是什么, 也可以利用一个有效对$(x,h_K(x))$计算新的有效对$(x^\prime,h_K(x^\prime)$
+直接把K作为$IV$ (IV 即 Compress 的初始输入 见迭代Hash函数的基本结构)</description></item></channel></rss>
