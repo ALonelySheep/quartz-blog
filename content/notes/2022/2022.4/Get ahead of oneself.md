@@ -3,7 +3,7 @@ title: "Get ahead of oneself"
 tags:
 - all
 
-date: ""
+
 ---
 ## **get ahead of yourself**
 

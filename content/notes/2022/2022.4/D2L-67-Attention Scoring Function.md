@@ -36,9 +36,9 @@ $$\alpha(\mathbf{q}, \mathbf{k}_i) = \mathrm{softmax}(a(\mathbf{q}, \mathbf{
 
 ## 两种注意力评分函数
 ### Additive Attention
-![D2L-68-Additive Attention](notes/2022/2022.4/D2L-68-Additive%20Attention.md)
+[D2L-68-Additive Attention](notes/2022/2022.4/D2L-68-Additive%20Attention.md)
 
 ### Scaled Dot-Product Attention
-![D2L-69-Scaled Dot-Product Attention](notes/2022/2022.4/D2L-69-Scaled%20Dot-Product%20Attention.md)
+[D2L-69-Scaled Dot-Product Attention](notes/2022/2022.4/D2L-69-Scaled%20Dot-Product%20Attention.md)
 
 

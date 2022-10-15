@@ -27,7 +27,7 @@ Tags: #Matrix #Math/LinearAlgebra #Math
 - $A=L U$ 可以理解为矩阵的化简(elimination). 
 - $L$ 代表 Lower Triangular, 是一个下三角矩阵, 同理, $U$代表Upper Triangular, 是一个上三角矩阵.
 - LU分解可以被视为高斯消去法的矩阵形式。$L$ 是高斯消元法的过程, 而$U$是高斯消元法的结果. 看下面这个例子:
-- ![LU分解的例子](notes/2021/2021.11/LU分解的例子.md)
+- [LU分解的例子](notes/2021/2021.11/LU分解的例子.md)
 
 ### 正交分解 : $A=Q R$
 - 通过将矩阵 $A$ 的列$\boldsymbol{a}_{1}$ 到 $\boldsymbol{a}_{n}$"正交化" (orthogonalize), 我们就得到了正交分解$A=Q R$

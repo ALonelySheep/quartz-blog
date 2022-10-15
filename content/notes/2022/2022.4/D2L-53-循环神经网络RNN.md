@@ -83,7 +83,7 @@ $$\begin{aligned}
 > -   在基线上，该模型的预测是词表的所有可用词元上的均匀分布。 在这种情况下，困惑度等于词表中唯一词元的数量 $|\mathcal{V}|$。 事实上，如果我们在没有任何压缩的情况下存储序列， 这将是我们能做的最好的编码方式。 因此，这种方式提供了一个重要的上限， 而任何实际模型都必须超越这个上限。[^1]
 
 ## RNN中output和hidden_state的区别
-![RNN中output和hidden_state的区别](notes/2022/2022.4/RNN中output和hidden_state的区别.md)
+[RNN中output和hidden_state的区别](notes/2022/2022.4/RNN中output和hidden_state的区别.md)
 
 
 [^1]: [8.4. 循环神经网络 — 动手学深度学习 2.0.0-beta0 documentation](https://zh-v2.d2l.ai/chapter_recurrent-neural-networks/rnn.html)

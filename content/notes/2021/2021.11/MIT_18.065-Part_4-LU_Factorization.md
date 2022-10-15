@@ -31,7 +31,7 @@ Tags: #Math/LinearAlgebra #Math #Matrix
 - 对于二维的问题Row Perspective 看起来还行, 但是对于多维的情形, Column Perspective更加直观(想象好几个超平面的交点是很困难的!)
 
 ## 回顾A=LU的分解步骤
-![LU分解的例子](notes/2021/2021.11/LU分解的例子.md)
+[LU分解的例子](notes/2021/2021.11/LU分解的例子.md)
 - 从上面的例子里面我们能够得到一种直觉: 求LU分解的过程就是每次解决一列, 直到结果完全变成三角矩阵.
 - **Intuition:**
 	![](notes/2021/2021.11/assets/Pasted%20image%2020211113010753.png)

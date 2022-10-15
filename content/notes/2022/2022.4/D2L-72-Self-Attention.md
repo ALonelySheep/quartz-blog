@@ -62,7 +62,7 @@ attention.eval()
 
 ## 位置编码
 - 在处理词元序列时，RNN是逐个的重复地处理词元的， 而**自注意力则因为并行计算而放弃了顺序操作**。 
-![D2L-73-Positional_Encoding](notes/2022/2022.4/D2L-73-Positional_Encoding.md)
+[D2L-73-Positional_Encoding](notes/2022/2022.4/D2L-73-Positional_Encoding.md)
 
 
 [^1]:  回看我之前的笔记, 我当时记录的并没有这么清晰. 这说明在第一遍"学懂"以后, 第二遍的梳理往往能获得新的, 更凝练的理解. [What is Attention, Self Attention, Multi-Head Attention? | Aditya Agrawal](https://www.adityaagrawal.net/blog/deep_learning/attention)

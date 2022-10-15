@@ -5,13 +5,13 @@ tags:
 - Math/LinearAlgebra
 - Matrix
 - Math
-date: ""
+
 ---
 
-#Math/LinearAlgebra #Matrix #Math 
-
+# Math/LinearAlgebra #Matrix #Math
 
 $$S=Q \Lambda Q^{\mathrm{T}}$$
+
 - 其中S是一个对称矩阵, $S=S^{\mathrm{T}}$
 - Q的行向量是S的特征向量, 这些特征向量相互正交
 $$Q=\left[\begin{array}{ccc}
@@ -41,11 +41,10 @@ $$S=(Q \Lambda) Q^{\mathrm{T}}=
 - 这样, S就被拆分成了秩为一的小矩阵的加和, 其中每一个小矩阵$\lambda_{i} \boldsymbol{q}_{i}\boldsymbol{q}_{i}^{\mathrm{T}}$也是对称矩阵, 因为这个小矩阵是特征向量$\boldsymbol{q}_{i}$自己与自己的外积$\boldsymbol{q}_{i}\boldsymbol{q}_{i}^{\mathrm{T}}$的$\lambda_i$倍
 
 - 验证: 如果我们计算$Sq_1$:
-	- 因为q相互正交, 所以: $\boldsymbol{q}_{2}^{\mathrm{T}}\boldsymbol{q}_{1}=0$
-	- 所以:
-	$$\lambda_{2} \boldsymbol{q}_{2}\boldsymbol{q}_{2}^{\mathrm{T}}\boldsymbol{q}_{1}=0$$
+  - 因为q相互正交, 所以: $\boldsymbol{q}_{2}^{\mathrm{T}}\boldsymbol{q}_{1}=0$
+  - 所以:
+ $$\lambda_{2} \boldsymbol{q}_{2}\boldsymbol{q}_{2}^{\mathrm{T}}\boldsymbol{q}_{1}=0$$
 - 又因为q是单位向量, 所以: $\boldsymbol{q}_{1}^{\mathrm{T}}\boldsymbol{q}_{1}=1$
-	$$S\boldsymbol{q}_{1}=
+ $$S\boldsymbol{q}_{1}=
 \lambda_{1}\boldsymbol{q}_{1}\boldsymbol{q}_{1}^{\mathrm{T}}\boldsymbol{q}_{1}=\lambda_{1}\boldsymbol{q}_{1}$$
-	符合特征向量的定义.
-
+ 符合特征向量的定义.

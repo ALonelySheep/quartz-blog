@@ -29,7 +29,7 @@ Tags: #DeepLearning #ActivationFunction
 - 注意，当输入值精确等于0时，ReLU函数不可导。 在此时，我们默认使用左侧的导数，即当输入为0时导数为0。[^1]
 
 ## Sigmoid 函数
-![Sigmoid_Function](notes/2021/2021.8/Sigmoid_Function.md)
+[Sigmoid_Function](notes/2021/2021.8/Sigmoid_Function.md)
 
 ## Tanh 函数
 - 与sigmoid函数类似， tanh(双曲正切)函数将其输入压缩转换到区间$(-1, 1)$上。

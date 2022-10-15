@@ -16,7 +16,7 @@ Tags: #SoftmaxRegression #MachineLearning #Classification #MulticlassClassificat
 
 - Softmax回归解决的是多分类问题[^1], 它可以看作是二分类的[Logistic_Regression](notes/2021/2021.8/Part.12_Logistic_Regression(ML_Andrew.Ng.).md)的推广.
 
-![Softmax函数](notes/2022/2022.2/Softmax函数.md)
+[Softmax函数](notes/2022/2022.2/Softmax函数.md)
 
 ## Softmax回归
 - Softmax回归就是在线性回归的基础上套上一个Softmax函数, 取输出结果中概率最大的项作为预测结果.

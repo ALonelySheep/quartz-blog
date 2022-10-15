@@ -3,13 +3,11 @@ title: "A Fancy Example of SVD"
 tags:
 - all
 
-date: ""
+
 ---
 ==Example==
 
 Consider the $4 × 5$ matrix
-
-  
 
 $$\mathbf{M} = \begin{bmatrix}
 
@@ -25,11 +23,7 @@ $$\mathbf{M} = \begin{bmatrix}
 
 $$
 
-  
-
 A singular value decomposition of this matrix is given by $UΣV^⁎$
-
-  
 
 $$\begin{align}
 
@@ -45,8 +39,6 @@ $$\begin{align}
 
  \end{bmatrix} \\[6pt]
 
-  
-
  \boldsymbol{\Sigma} &= \begin{bmatrix}
 
  3 & 0 & 0 & 0 & \color{Gray}\mathit{0} \\
@@ -58,8 +50,6 @@ $$\begin{align}
  0 & 0 & 0 & \color{Red}\mathbf{0} & \color{Gray}\mathit{0}
 
  \end{bmatrix} \\[6pt]
-
-  
 
  \mathbf{V}^* &= \begin{bmatrix}
 
@@ -77,11 +67,7 @@ $$\begin{align}
 
 \end{align}$$
 
-  
-
 The scaling matrix $\mathbf{\Sigma}$ is zero outside of the diagonal (grey italics) and one diagonal element is zero (red bold). Furthermore, because the matrices $U$ and $V^T$ are unitary matrix|unitary, multiplying by their respective conjugate transposes yields identity matrix|identity matrices, as shown below.  In this case, because $U$ and $V^T$ are real valued, each is an orthogonal matrix.
-
-  
 
 $$\begin{align}
 
@@ -117,8 +103,6 @@ $$\begin{align}
 
 \end{align}$$
 
-  
-
 This particular singular value decomposition is not unique.  Choosing $\mathbf V$ such that
 
 $$\mathbf{V}^* = \begin{bmatrix}
@@ -134,7 +118,5 @@ $$\mathbf{V}^* = \begin{bmatrix}
  \color{Purple}-\sqrt{0.4} & \color{Purple}0 & \color{Purple}0 & \color{Purple}\sqrt{0.5} & \color{Purple}\sqrt{0.1}
 
 \end{bmatrix}$$
-
-  
 
 is also a valid singular value decomposition.

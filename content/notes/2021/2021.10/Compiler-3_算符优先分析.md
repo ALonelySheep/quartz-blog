@@ -190,9 +190,9 @@ $\#N_1\space a_1\space N_2\space a_2\space \cdots N_n\space a_n\space N_{n+1} \#
 直观上这样理解:
 ![500](notes/2021/2021.10/assets/img_2022-10-15-48.png)
 ### Start Parsing!
-![算符优先算法 解析](notes/2021/2021.10/assets/img_2022-10-15-49.png)
+[算符优先算法 解析](notes/2021/2021.10/assets/img_2022-10-15-49.png)
 一个具体的例子:
-![Operator_Precedence_Parse](notes/2021/2021.10/assets/Operator_Precedence_Parse.pdf)
+[Operator_Precedence_Parse](notes/2021/2021.10/assets/Operator_Precedence_Parse.pdf)
 
 
 需要注意的是:

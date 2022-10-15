@@ -3,15 +3,16 @@ title: "Entropy-熵"
 tags:
 - all
 - InformationTheory
-date: ""
+
 ---
 # Entropy - 熵
 
 2022-02-11</div>
 
-Tags: #InformationTheory 
+Tags: #InformationTheory
 
 ## 理解
+
 - 熵是Surprise的期望
 [Entropy (for data science) Clearly Explained!!! - YouTube](https://www.youtube.com/watch?v=YtebGVx-Fxw)
 
@@ -23,10 +24,8 @@ Tags: #InformationTheory
 **联系:**  一个事件越复杂, 那么就需要更多的信息来描述这个事件, 这个事件的平均"惊讶程度"就越高, 这个事件的熵就越高.
 
 ## 公式
+
 $$\text { Entropy }=-\sum p(x) \log (p(x))$$
 or
 $$\text { Entropy }=\sum p(x) \log \left(\frac{1}{p(x)}\right)$$
 (The Average *Surprise*)
-
-
-

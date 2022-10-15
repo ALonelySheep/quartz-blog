@@ -3,7 +3,7 @@ title: "LU分解的例子"
 tags:
 - all
 
-date: ""
+
 ---
 将一个简单的$3×3$矩阵A进行LU分解：
 $$ A=
@@ -68,5 +68,5 @@ $$L= L_{1}^{-1}L_{2}^{-1}=
            2 & 1 & 0 \\
            3 & -1 & 1 \\
         \end{bmatrix} $$
-		
+  
 Ref: [LU分解 - 维基百科，自由的百科全书](https://zh.wikipedia.org/zh-hans/LU%E5%88%86%E8%A7%A3)

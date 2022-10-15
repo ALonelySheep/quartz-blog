@@ -57,20 +57,20 @@ As we approach a local minimum, gradient descent will automatically take smaller
 	
 	
 ## Different Gradient Descent Methods
-![Different_Gradient_Descent_Methods](notes/2021/2021.8/Different_Gradient_Descent_Methods.md)
+[Different_Gradient_Descent_Methods](notes/2021/2021.8/Different_Gradient_Descent_Methods.md)
 
 
 ## [Linear Regression & Gradient Descent](notes/2021/2021.8/Linear_Regression&Gradient_Descent.md)
-![Linear_Regression&Gradient_Descent](notes/2021/2021.8/Linear_Regression&Gradient_Descent.md)
+[Linear_Regression&Gradient_Descent](notes/2021/2021.8/Linear_Regression&Gradient_Descent.md)
 
-![Relation_Between_Linear_Regression&Gradient_Descent_梯度下降和线性回归的关系](notes/2021/2021.8/Relation_Between_Linear_Regression&Gradient_Descent_梯度下降和线性回归的关系.md)
+[Relation_Between_Linear_Regression&Gradient_Descent_梯度下降和线性回归的关系](notes/2021/2021.8/Relation_Between_Linear_Regression&Gradient_Descent_梯度下降和线性回归的关系.md)
 
 ## [Logistic Regression & Gradient Descent](notes/2021/2021.8/Part.14_Logistic_Regression&Gradient_Descent(ML_Andrew.Ng.).md)
-![Part.14_Logistic_Regression&Gradient_Descent(ML_Andrew.Ng.)](notes/2021/2021.8/Part.14_Logistic_Regression&Gradient_Descent(ML_Andrew.Ng.).md)
+[Part.14_Logistic_Regression&Gradient_Descent(ML_Andrew.Ng.)](notes/2021/2021.8/Part.14_Logistic_Regression&Gradient_Descent(ML_Andrew.Ng.).md)
 
 
 
 ## [[notes/2021/2021.8/凸优化与线性回归问题]]
 
-![凸优化与线性回归问题](notes/2021/2021.8/凸优化与线性回归问题.md)
+[凸优化与线性回归问题](notes/2021/2021.8/凸优化与线性回归问题.md)
 	

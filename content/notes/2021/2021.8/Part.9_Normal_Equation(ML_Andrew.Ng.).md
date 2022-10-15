@@ -63,7 +63,7 @@ $X$ 的列向量垂直于$(\vec y -\mathrm {proj}_{Col(X)}\space \vec y)=(\vec y
 然后如果$X$的列向量独立, 那么$X^TX$可逆, 那么$\theta=(X^TX)^{-1}X^T\vec y$
 
 ### 求导数
-![Normal_Equation_Proof_2_Matrix_Method](notes/2021/2021.8/Normal_Equation_Proof_2_Matrix_Method.md)
+[Normal_Equation_Proof_2_Matrix_Method](notes/2021/2021.8/Normal_Equation_Proof_2_Matrix_Method.md)
 
 
 ## 局限性
