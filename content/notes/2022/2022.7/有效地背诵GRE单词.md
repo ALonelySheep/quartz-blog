@@ -3,13 +3,12 @@ title: "有效地背诵GRE单词"
 tags:
 - all
 - English
+enableToc: false
 date: "2022-07-09"
 ---
 # 有效地背诵 GRE 单词
 
 <div align="right"> 2022-07-09</div>
-
-Tags: #English 
 
 #### Bathos
 - **Bathos** is a coined word(from Greek _bathys,_ “deep”), which means unsuccessful, and therefore ludicrous, attempt to portray [pathos](https://www.merriam-webster.com/dictionary/pathos) in art, _i.e.,_ to evoke pity, sympathy, or sorrow. The term was first used in this sense by [Alexander Pope](https://www.britannica.com/biography/Alexander-Pope-English-author) in his [treatise](https://www.merriam-webster.com/dictionary/treatise) _Peri Bathous; or, The Art of Sinking in Poetry_ (1728).

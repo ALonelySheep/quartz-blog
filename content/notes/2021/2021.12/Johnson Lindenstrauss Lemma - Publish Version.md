@@ -75,14 +75,20 @@ $$
 - 我们先如下构造一个线性变换$f: \mathbb{R}^{n} \rightarrow \mathbb{R}^{d}$
 	
 	- 构造$d$个$n$维的随机向量$r_i$, 每一个向量都由$n$个独立同分布的元素 $r_{i,j}$ 构成. 则$f$是下面这个矩阵 $F$ , 它将$n$维向量映射为$d$维向量:
-	$$F=\left[\begin{array}{c}
-	---r_{1}--- \\
-	\vdots \\
-	---r_{d}---
-	\end{array}\right]_{d\times n}$$
+$$
+F=\left[
+\begin{array}{c}
+---r_{1}--- \\	
+\vdots \\
+---r_{d}---\\
+\end{array}
+\right]_{d\times n}
+$$
 
 -  对于$n$维单位向量 $v \in \mathbb{R}^{n}$ , $\|v\|=1$ 和 $d=O\left(\log (m) / \epsilon^{2}\right)$, 我们可以证明以下结论: 
+
 $$\operatorname{Pr}\left[1-\epsilon \leq \frac{\|f(v)\|}{\sqrt{d}} \leq 1+\epsilon\right] \geq 1-2 / m^{3} .$$
+
 - 前面引理里提到的线性变换即$L(v):=f(v) / \sqrt{d}$, 因为$f$是线性的, 所以$L$也是线性的.
 
 - 因为线性变换有这个优良的性质: $f(ax)=af(x)$, 所以上式其实可以推出任意向量$l_2$Norm的不变性: 对于任意长度的 $v$, 有$\frac v {\|v\|}$为单位向量, 带入上面的不等式:
@@ -93,7 +99,9 @@ $$\operatorname{Pr}[(1-\epsilon)\|v\| \leq\|L(v)\| \leq(1+\epsilon)\|v\|] \geq 1
 如果我们将结果应用到 $v=x_{j}$ 和任意的 $v=x_{j}-x_{j^{\prime}}$ (对于 $j \neq j^{\prime}$ ). 因为一共有$(^m_2)=O(m^{2})$ 对向量, 所以进一步应用 union bound 可以得到: 任意一对向量不满足上面式子的概率最大为 $2 / \mathrm{m}$, 也就是成功的的概率为$1-2 / \mathrm{m}$.
 
 #### Union Bound
-%%[[notes/2021/2021.12/Union_Bound-布尔不等式-Boole's_inequality]]%%
+
+[[notes/2021/2021.12/Union_Bound-布尔不等式-Boole's_inequality]]
+
 For any events $A_{1}, A_{2}, \ldots, A_{n}$, we have
 $$
 P\left(\bigcup_{i=1}^{n} A_{i}\right) \leq \sum_{i=1}^{n} P\left(A_{i}\right)
@@ -104,8 +112,11 @@ $$
 $$
 \mathbb{P}\left(A_{1} \bigcup A_{2} \bigcup \cdots\right) \leq \mathbb{P}\left(A_{1}\right)+\mathbb{P}\left(A_{2}\right)+\cdots
 $$
+
 #### Using Union Bound
+
 - 这部分这个TTI的讲义讲的比较好(zotero://select/items/@shamkakade2009TTICMSC)
+
 注意现在有 $O\left(m^{2}\right)$ 对向量 $u, v .$ 根据 union bound,
 $$
 \begin{aligned}
@@ -123,21 +134,30 @@ $$
 ![](notes/2021/2021.12/assets/JL_Proof_2.svg)
 
 #### $N(0, \sigma_X^2)+N(0, \sigma_Y^2)=N(0,\sigma_X^2+\sigma_Y^2)$
-%%[正态分布_高斯分布_Normal_Distribution-Gaussian_Distribution](notes/2021/2021.9/正态分布_高斯分布_Normal_Distribution-Gaussian_Distribution.md)%%
+
+[正态分布_高斯分布_Normal_Distribution-Gaussian_Distribution](notes/2021/2021.9/正态分布_高斯分布_Normal_Distribution-Gaussian_Distribution.md)
+
 - 我们可以把这个性质进一步推广到$m$个独立的随机变量: $Y_{1}, \ldots, Y_{m}$ 且 $Y_{i}$ 服从 $N(0,1)$. 对于标量 $\sigma_{1}, \ldots, \sigma_{m}$, 有 $\sum_{i} \sigma_{i} Y_{i}$ 服从 $N\left(0, \sum_{i} \sigma_{i}^{2}\right)$.
 
-
 #### Chi-Squared Distribution - 卡方分布
-%%[[notes/2021/2021.12/Chi-Squared_Distribution-卡方分布]]%%
+
+[[notes/2021/2021.12/Chi-Squared_Distribution-卡方分布]]
+
 正态独立随机变量的**平方和**是卡方分布的:
 
 $$Y=Z_{1}^{2}+Z_{2}^{2}+\cdots+Z_{n}^{2}$$
 then $Y$ is said to have a chi-squared distribution with $n$ degrees of freedom shown by $$Y \sim \chi^{2}(n)$$
+
 #### Prove The Norm Preservation Lemma
+
 $$\operatorname{Pr}\left[1-\epsilon \leq \frac{\|f(v)\|}{\sqrt{d}} \leq 1+\epsilon\right] \geq 1-\frac2  {m^{3}}$$
+
 这个结论实际上是对称的, 我们只证明一半, 即只证明右边那半边的失败概率小于 $1/m^3$ :
+
 $$\operatorname{Pr}\left[\frac{\|f(v)\|}{\sqrt{d}}\geq 1+\epsilon\right] \leq \frac1 {m^{3}}$$
+
 为了方便, 我们可以平方一下里面的部分:
+
 $$\operatorname{Pr}\left[\|f(v)\|^{2}>(1+\epsilon)^2 d\right]\leq1/m^3$$
 
 - 证明的第一步是证明 $\|f(v)\|^{2}$ 实际上服从自由度为 $d$ 的卡方分布:
@@ -235,7 +255,7 @@ $$\operatorname{Pr}[Y>\alpha] \leq \exp \left(-d\left(\epsilon+\epsilon^{2} / 2-
 我们即证明了Norm Preservation Lemma, 从而证明了Johnson Lindenstrauss Lemma
 
 #### 卡方分布的Chernoff Bound
-有的证明, 比如TTI(zotero://select/items/@shamkakade2009TTICMSC), MIT(zotero://select/items/@prof.ankurmoitra2016MIT854)讲义里面的证明, 都应用了Chi-Square Distribution的一个[Chernoff Bounds](notes/2021/2021.12/Chernoff%20Bounds.md): 
+有的证明, 比如 TTI (zotero://select/items/@shamkakade2009TTICMSC), MIT(zotero://select/items/@prof.ankurmoitra2016MIT854)讲义里面的证明, 都应用了Chi-Square Distribution的一个[Chernoff Bounds](notes/2021/2021.12/Chernoff%20Bounds.md): 
 
 > Lemma 4 (Chernoff bound for chi-square distributions).
 > $$
