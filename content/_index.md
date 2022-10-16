@@ -15,7 +15,6 @@ I write about anything and everything here, and my main interest lies in the int
 	- [矩阵的求导](notes/2021/2021.8/矩阵的求导.md)
 	- [D2L-4-矩阵求导](notes/2022/2022.1/D2L-4-矩阵求导.md)
 - [Diffie-Hellman问题](notes/2021/2021.6/Diffie-Hellman问题.md)
-- [Dummy_Variables](notes/2022/2022.1/Dummy_Variables.md)
 - [KL_Divergence-KL散度](notes/2022/2022.2/KL_Divergence-KL散度.md)
 - [Gilbert Strang 深入浅出机器学习的矩阵知识](notes/2022/2022.10/Gilbert%20Strang%20深入浅出机器学习的矩阵知识.md)
 - [Understanding Bayes' Theorem](notes/2021/2021.12/Understanding%20Bayes'%20Theorem.Md)
@@ -24,7 +23,7 @@ I write about anything and everything here, and my main interest lies in the int
 - [为什么Softmax回归不用MSE](notes/2022/2022.2/为什么Softmax回归不用MSE.md)
 - [Kernel Regression](notes/2022/2022.4/D2L-64-Kernel%20Regression.md)
 - [Norm in Regularization - Intuition](notes/2022/2022.2/Norm%20in%20Regularization%20-%20Intuition.md)
-- [Fisher_Linear_Discriminant(Pattern_Classification-Chapter_4)](notes/2021/2021.10/Part.29_Fisher_Linear_Discriminant(Pattern_Classification-Chapter_4).Md)
+- [Fisher Linear Discriminant(Pattern_Classification-Chapter_4)](notes/2021/2021.10/Part.29_Fisher_Linear_Discriminant(Pattern_Classification-Chapter_4).Md)
 - [Cross_Entropy-交叉熵](notes/2022/2022.2/Cross_Entropy-交叉熵.md)
 
 ### Deep Learning
@@ -41,7 +40,7 @@ I write about anything and everything here, and my main interest lies in the int
 - [智能版加权平均 is All You Need: 图解Transformer](notes/2022/2022.4/D2L-74-Transformer.md)
 - [端到端学习-End_to_End_Learning-E2E](notes/2022/2022.5/端到端学习-End_to_End_Learning-E2E.md)
 - [好的预测模型的特质](notes/2022/2022.2/好的预测模型的特质.md)
-- [What_is_a_tensor](notes/2022/2022.1/D2L-1-What_is_a_tensor.md)
+- [What is a tensor](notes/2022/2022.1/D2L-1-What_is_a_tensor.md)
 - [自动求导](notes/2022/2022.1/D2L-7-自动求导.md)
 	- [为什么反向传播比前向传播更高效](notes/2022/2022.1/为什么反向传播比前向传播更高效.md)
 - [MLP-多层感知机](notes/2022/2022.2/D2L-17-MLP-多层感知机.md)
@@ -56,3 +55,4 @@ I write about anything and everything here, and my main interest lies in the int
 [如何努力工作_Paul_Graham](notes/2021/2021.8/如何努力工作_Paul_Graham.md)
 
 ## Blog as Network
+- Feel free to explore the graph below!
