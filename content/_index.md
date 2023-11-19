@@ -8,11 +8,10 @@ I write about anything and everything here, and my main interest lies at the int
 Check out the network at the bottom of the page!
 
 > [!info] Site under construction
+> 
 > I'm trying to build a new site with better LaTeX support and automatic Chinese <-> English translation with GPT4. 
+> 
 > Sorry if some link is broken!
-
-> [!info]
-> Coming from Quartz 3? See the [[migrating from Quartz 3|migration guide]] for the differences between Quartz 3 and Quartz 4 and how to migrate.
 
 ## How about reading something about ...
 ### Math
