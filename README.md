@@ -1,6 +1,6 @@
 # Cyan's Blog
 
-Welcome!🎉 I'm Cyan Fu, a CS undergrad at Tongji University. 
+Welcome!🎉 I'm Cyan Fu, a master student at Carnegie Mellon University studying Artificial Intelligence. 
 
 I write about anything and everything here, and my main interest lies in the intersection of AI and 3D vision. I hope you find something new here!
 
